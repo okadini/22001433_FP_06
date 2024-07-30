@@ -35,20 +35,19 @@ object q1 {
 
         println()
 
-        //2
+        //3
         if(!inventory1.isEmpty) {
             println("Inventory 1 is not empty")
         }
         else {
-            println("Inevntory is empty")
+            println("Inevntory 1 is empty")
         }
 
         println()
 
-        //3
-        val mergedInventory = inventory1 ++ inventory2
-
         //4
+        val mergedInventory = inventory1 ++ inventory2
+        
         println("Two inventories after merging (productID -> (productName,quantity,price(Rs.))) :")
         mergedInventory.keys.toSeq.sorted.foreach{i => println(i + " -> " + mergedInventory(i))}
 
