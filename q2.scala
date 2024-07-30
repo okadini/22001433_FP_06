@@ -26,7 +26,7 @@ object q2 {
 
             if(name == "" && (marks < 0 || marks > totalMarks)) {
                 isValid = false 
-                errorMessage = Some("N")
+                errorMessage = Some("NM")
             }
 
             if(name == "" && totalMarks <= 0) {
